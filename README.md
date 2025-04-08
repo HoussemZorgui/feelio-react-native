@@ -35,20 +35,11 @@ Start writing your story today! 🚀
 
 ---
 
-## ✨ Features
+## ⚙️ Installation & Running the App
 
-- 🔒 Lock your diary with a password
-- 🎨 Customize your interface with different colors
-- 🗂️ Organize your thoughts easily
-- ☁️ Access your diary anywhere, anytime
-- 🌤️ View live weather information inside the app
-
----
-
-## ⚙️ Setup
-
-Clone the repository:
+### 1. Clone the repository:
 
 ```bash
 git clone https://github.com/HoussemZorgui/feelio-react-native.git
 cd feelio
+
