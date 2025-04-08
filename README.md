@@ -14,9 +14,10 @@
 
 **Feelio** — Your Private Space 📝
 
-Feelio is a secure and beautiful digital diary app designed to help you express yourself freely. Write your thoughts, feelings, and stories in a safe environment. Reflect on your journey, and grow with Feelio.
+Feelio is a secure and beautiful digital diary app designed to help you express yourself freely.  
+Write your thoughts, feelings, and stories in a safe environment. Reflect on your journey, and grow with Feelio.
 
-Start writing your story today!
+Start writing your story today! 🚀
 
 ---
 
@@ -40,7 +41,7 @@ Start writing your story today!
 - 🎨 Customize your interface with different colors
 - 🗂️ Organize your thoughts easily
 - ☁️ Access your diary anywhere, anytime
-- 🌤️ See live weather info inside the app
+- 🌤️ View live weather information inside the app
 
 ---
 
@@ -49,5 +50,5 @@ Start writing your story today!
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/HoussemZorgui/feelio-react-native.git
 cd feelio
