@@ -49,10 +49,11 @@ export default function App() {
         const loadedOpacityColor = await SecureStore.getItemAsync(
           "opacitycolor"
         );
-        const loadedBgColor = await SecureStore.getItemAsync("bgcolor");
+      
         const loadedCardColor = await SecureStore.getItemAsync("cardcolor");
         const loadedTextColor = await SecureStore.getItemAsync("textcolor");
         const loadedUsername = await SecureStore.getItemAsync("username");
+        const loadedBgColor = await SecureStore.getItemAsync("bgcolor");
         if (loadedUsername !== "") {
           setMyUname(loadedUsername);
         }
