@@ -12,9 +12,10 @@ import useStyles from "../constants/styles";
 import AddTopBar from "../components/AddTopBar";
 import { insertDiary } from "../constants/Database";
 import { useNavigation } from "@react-navigation/native";
+import SpeechToText from "../components/Voice";
 import { DContexts } from "../contexts/DContexts";
 import SecureStoreModel from "../constants/SecureStoreModel";
-import SpeechToText from "../components/Voice";
+
 export default function Add() {
   SecureStoreModel.itemExists("myKey").then((exists) => {
     console.log(`Does "myKey" exist? ${exists}`);
