@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -16,19 +16,44 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "y"
+      "bundleIdentifier": "com.feelio.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Feelio uses the camera so you can attach photos to your journal entries.",
+        "NSPhotoLibraryUsageDescription": "Feelio accesses your photo library so you can attach images to journal entries.",
+        "NSLocationWhenInUseUsageDescription": "Feelio uses your location to display the current weather in your journal.",
+        "NSMicrophoneUsageDescription": "Feelio uses the microphone for voice-to-text journal entries."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFF9E9"
-      }
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "RECORD_AUDIO",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "SCHEDULE_EXACT_ALARM"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-secure-store",
+      "expo-notifications",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Feelio accesses your photos to let you attach images to journal entries.",
+          "cameraPermission": "Feelio uses the camera to let you capture moments for your journal."
+        }
+      ],
       [
         "expo-font",
         {
