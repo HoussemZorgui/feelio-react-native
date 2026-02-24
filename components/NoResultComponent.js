@@ -4,7 +4,7 @@ import useStyles from "../constants/styles";
 import { Ionicons } from "@expo/vector-icons";
 import { DContexts } from "../contexts/DContexts";
 export default function NoResultComponent() {
-  css = useStyles();
+  const css = useStyles();
   const { primarycolor } = useContext(DContexts);
   return (
     <View style={css.noresdiv}>

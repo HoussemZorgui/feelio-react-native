@@ -6,7 +6,7 @@ const useStyles = () => {
   const { bgcolor } = useContext(DContexts);
   const { txtcolor } = useContext(DContexts);
 
-  return StyleSheet.create({
+  const styles = StyleSheet.create({
     container: {
       flex: 1,
       flexGrow: 1,
@@ -46,6 +46,8 @@ const useStyles = () => {
       color: txtcolor,
     },
   });
+
+  return styles;
 };
 
 export default useStyles;

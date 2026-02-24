@@ -7,7 +7,7 @@ import useStyles from "../constants/styles";
 export default function EditTopBar({ acton }) {
   const { primarycolor } = useContext(DContexts);
   const navigation = useNavigation();
-  css = useStyles();
+  const css = useStyles();
 
   return (
     <View style={styles.AddTopBar}>

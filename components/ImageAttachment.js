@@ -27,7 +27,7 @@ export default function ImageAttachment({ images = [], onChange }) {
 
         const result = await ImagePicker.launchImageLibraryAsync({
             mediaTypes: ImagePicker.MediaTypeOptions.Images,
-            allowsEditing: true,
+            allowsEditing: false, // Changed from true to false as it doesn't work with multiple selection
             quality: 0.7,
             allowsMultipleSelection: true,
         });

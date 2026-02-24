@@ -4,7 +4,7 @@ import { DContexts } from "../contexts/DContexts";
 import useStyles from "../constants/styles";
 export default function AddTopBar({ acton }) {
   const { primarycolor } = useContext(DContexts);
-  css = useStyles();
+  const css = useStyles();
   return (
     <View style={styles.AddTopBar}>
       <View style={styles.atp_icon}></View>
